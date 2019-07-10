@@ -5,8 +5,12 @@
 *.tfstate
 *.tfstate.*
 
-# Crash log files
-crash.log
+# directories
+.terraform/
+.vagrant/
+
+# ignored terraform files
+*gitignore*.tf
 
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
@@ -27,3 +31,21 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# Ignored vscode files
+.vscode/
+
+# ssh keys
+*.pem
+
+# backup files
+#*.bak
+
+# Crash log files
+crash.log
+
+# logs
+*.log
+
+# ignore Mac .DS_Store files
+.DS_Store
